@@ -41,6 +41,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "nth-check": ">=2.0.1",
+    "immer": ">=9.0.6"
   }
 }
