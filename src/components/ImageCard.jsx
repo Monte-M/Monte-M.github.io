@@ -8,7 +8,7 @@ function ImageCard({ image }) {
       <img src={image.webformatURL} alt="" className="w-full" />
       <div className="px-6 py-4">
         <div className="font-bold text-purple-500 text-xl mb-2">
-          Photo by John Doe
+          {image.user}
         </div>
         <ul>
           <li>
@@ -26,9 +26,9 @@ function ImageCard({ image }) {
         </ul>
       </div>
       <div className="px-6 py-4">
-        {tags.map((tag) => (
+        {tags.map((tag, index) => (
           <span
-            key={image.id}
+            key={index}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
             #{tag}
